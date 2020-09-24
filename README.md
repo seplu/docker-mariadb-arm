@@ -25,8 +25,8 @@ mysql:
     MYSQL_DATABASE: database
     MYSQL_USER: user
     MYSQL_PASSWORD: FAX56AkjYaBtRVpW
-  expose:
-    - "3306"
+  ports:
+    - "3306:3306"
   volumes:
     - /data/mysql:/var/lib/mysql
   restart: always
